@@ -29,21 +29,20 @@ public class Main {
                     .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
 
     public static void main(String[] args) {
-        
+
         final int NUM_MIN = 1;
         final int NUM_MAX = 49;
 
         int numPrimi;
 
         try {
-            
 
             System.out.print("Número Primitiva ..: ");
             numPrimi = SCN.nextInt();
 
             boolean testOK = numPrimi >= NUM_MIN && numPrimi <= NUM_MAX;
-            
-            System.out.println(testOK ? "Número SI correcto" :"Número NO correcto");
+
+            System.out.println(testOK ? "Número SI correcto" : "Número NO correcto");
         } catch (Exception e) {
             System.out.println("ERROR: Entrada incorrecta");
         }
@@ -51,4 +50,3 @@ public class Main {
     }
 
 }
-
